@@ -1,0 +1,112 @@
+//variables couleur
+$light-purple:  #9747ff;
+$lightgray:#f6f6f6;
+
+html * {
+   margin: 0; 
+}
+
+body {
+    margin: auto;
+    font-family: roboto;
+    font-size: 14px;
+    /* Taille de police ajustée pour les mobiles */
+}
+
+.container {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btnAction{
+
+width: 218px;
+height: 50px;
+border: none;
+border-radius: 30px;
+color: #fff;
+background: linear-gradient(#ff79da, #9356dc);
+box-shadow: 5px 5px 4px 0px #ddd9d9;
+transition: opacity 500ms ease-in-out;
+
+&:hover{
+opacity: 0.8;
+}
+
+}
+
+.heart-container{
+    position: relative;
+
+    i{
+        position: absolute;
+        right: 10px;
+    }
+
+    .fa-heart{
+        font-size: 26px;
+    }
+
+    .full-heart{
+        opacity: 0;
+        transition-property: all;
+        transition-duration: 2s;
+    }
+    
+    .full-heart:hover{
+        opacity: 1;
+        color: #9747ff;
+    }
+}
+
+.icon-color{
+    color: #9747ff;
+}
+
+
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff;
+    height : 100vh;
+    width:100%; 
+
+    inset: 0;
+    position: fixed;
+    z-index: 1;
+    opacity: 1;
+     
+    animation: nohsow 5s forwards;
+
+    p{
+
+        font-size: 52px;
+        animation: disappear 3s forwards;
+
+    }
+}
+
+@keyframes disappear{
+to{
+    transform: scale(0);
+}
+}
+
+@keyframes nohsow{
+   0%{
+    opacity: 1;
+   }
+
+   90%{
+    opacity: 0.5;
+   }
+
+   100%{
+    opacity: 0;
+    z-index: -1;
+   }
+}
+
+

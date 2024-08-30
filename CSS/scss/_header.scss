@@ -1,0 +1,38 @@
+.header{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+    &__logo{
+        font-family: shrikhand;
+        font-size: 30px;
+}
+    &__form{
+        width: 100%;
+        background-color: #eaeaea;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        gap: 10px;
+
+        input{
+            background-color: transparent;
+            border: none;
+            width: 100px;
+        }
+    }
+}
+
+.header_resto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a{
+        font-size:20px;
+        position: absolute;
+        left :10px
+    }
+}

@@ -1,0 +1,21 @@
+/* Styles généraux pour les mobiles */
+@media only screen and (max-width: 600px) {
+    /* Vos styles spécifiques pour les mobiles */
+}
+body {
+    font-size: 16px; /* Taille de police de base */
+}
+
+@media only screen and (max-width: 600px) {
+    
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 600px) {
+    
+}
+
+  
